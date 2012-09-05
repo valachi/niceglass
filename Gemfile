@@ -5,6 +5,7 @@ gem 'haml'
 gem 'compass-rails'
 
 gem 'sqlite3', group: :development
+gem 'pg'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
