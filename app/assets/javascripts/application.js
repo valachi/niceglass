@@ -12,4 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require galleria-1.2.8
+//= require galleria.classic
 //= require_tree .
