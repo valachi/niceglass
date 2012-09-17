@@ -1,3 +1,5 @@
+@import "base"
+
 #services
   padding: 15px
   ul
@@ -5,8 +7,30 @@
       float: left
       width: 448px
       height: 183px
-      border: 1px solid black
       margin: 0 21px 10px 0
+      +single-box-shadow(rgba(black, .7), 0, 0, 10px)
+
+      img
+        float: left
+
+      h3
+        color: #008B8B
+        font-size: 15px
+        font-weight: bold
+        padding: 8px 0 8px
+
+      .description-box
+        float: left
+        font-size: 14px
+        width: 302px
+        background-color: #D1D0B8
+        height: 100%
+
+        .description
+          margin: 0 10px 0 10px
 
     li:nth-child(even)
       margin-right: 0
+
+  #disclaimer
+    font-size: 14px

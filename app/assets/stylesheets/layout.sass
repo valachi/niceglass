@@ -3,7 +3,6 @@
 body
   background-image: url(bg.jpg)
   background-size: cover
-  margin-top: 30px
   font: 13px/15px Geneva, Tahoma, sans-serif
   color: white
 
@@ -13,9 +12,11 @@ body
   height: 100%
 
   header
+    margin-top: 15px
     text-align: center
     font-size: 25px
     margin-bottom: 13px
+    color: black
 
   nav
     ul
@@ -31,11 +32,7 @@ body
           color: black
           line-height: 30px
           text-decoration: none
-          -webkit-transition: color .3s ease-out
-          -moz-transition: color .3s ease-out
-          -o-transition: color .3s ease-out
-          -ms-transition: color .3s ease-out
-          transition: color .3s ease-out
+          +single-transition(color, .3s, ease-out)
 
         a:hover
           color: white
@@ -49,7 +46,8 @@ body
     -moz-box-sizing: border-box
     -webkit-box-sizing: border-box
     border: 15px solid white
-    -webkit-box-shadow: 0 0 10px rgba(30, 30, 30, .6)
+    +single-box-shadow(rgba(30, 30, 30, .6), 0, 0, 10px)
+
 
     .nice-girls
       padding: 39px 63px
