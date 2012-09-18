@@ -1,0 +1,43 @@
+@import "base"
+
+#contacts
+  float: left
+  ul
+    margin: 15px
+    li
+      margin: 15px
+      a
+        color: white
+        text-decoration: none
+
+#message
+  float: left
+  padding-left: 75px
+
+#new_message
+  fieldset
+    margin: 10px 10px 10px 0
+
+  label
+    display: block
+    color: white
+    font-style: italic
+
+  input[type=text], input[type=email], textarea
+    color: #AB9C80
+    padding: 8px 15px
+    font-weight: bold
+    border: 1px solid pink
+    font-size: 13px
+
+  .submit
+    float: right
+    margin: 0 10px 10px 0
+
+  .button
+    +single-text-shadow(#ccc, 1px, 1px, 1px)
+    cursor: pointer
+    padding: 4px 8px
+    color: #AB9C80
+    font-weight: bold
+    text-transform: uppercase

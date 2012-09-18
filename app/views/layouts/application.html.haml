@@ -6,9 +6,13 @@
     =javascript_include_tag "application"
     =csrf_meta_tags
   %body
+    -if flash[:notice]
+      .alert.alert-success=flash[:notice]
+    -if flash[:alert]
+      .alert.alert-error=flash[:alert]
     #container
       %header
-        Студия дизайна
+        = link_to 'Студия Витража', root_path
       %nav#main
         %ul
           %li=link_to 'о нас', root_path

@@ -3,9 +3,13 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.8'
 gem 'haml'
 gem 'compass-rails'
-
-gem 'sqlite3', group: :development
 gem 'pg'
+gem 'jquery-rails'
+
+group :development do
+  gem 'sqlite3'
+  gem 'letter_opener'
+end
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -13,4 +17,3 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'

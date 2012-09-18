@@ -1,0 +1,31 @@
+#contacts
+  %ul
+    %li Санкт-Петербург
+    %li
+      Евгения +7 (911) 792-82-90
+    %li
+      Елена +7 (911) 227-94-89
+    %li
+      %a{href: 'mailto:info@niceglass.ru'} info@niceglass.ru
+    %li
+      %a{href: 'http://vk.com/niceglass', target: 'blank'}=image_tag 'vk.png', width: 20
+      %span
+        %a{href: 'http://vk.com/niceglass', target: 'blank'} vk.com/niceglass
+    %li
+      Санкт-Петербург
+#message
+  = form_for Message.new, url: send_email_path do |f|
+    %fieldset
+      = f.label :name, "Ваше имя"
+      = f.text_field :name, placeholder: 'Евгения'
+    %fieldset
+      = f.label :email, "Ваш email"
+      = f.email_field :email, placeholder: 'evgeniya@me.com'
+    %fieldset
+      = f.label :subject, "Тема сообщения"
+      = f.text_field :subject, placeholder: 'Вопрос'
+    %fieldset
+      = f.label :body, "Текст сообщения"
+      = f.text_area :body, placeholder: 'Текст сообщения', rows: 10
+    .submit
+      = f.button "Отправить", class: 'button'
