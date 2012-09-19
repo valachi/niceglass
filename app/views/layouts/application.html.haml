@@ -6,6 +6,12 @@
     =javascript_include_tag "application"
     =csrf_meta_tags
   %body
+    #loading
+      %p Письмо отправляется
+    #success
+      %p Письмо отправлено, спасибо!
+    #error
+      %p Произошла ошибка, приносим Вам свои извинения
     -if flash[:notice]
       .alert.alert-success=flash[:notice]
     -if flash[:alert]
