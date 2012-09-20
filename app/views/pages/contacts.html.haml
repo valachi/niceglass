@@ -29,3 +29,9 @@
       = f.text_area :body, placeholder: 'Текст сообщения', rows: 10
     .submit
       = f.button "Отправить", class: 'button'
+  #loading
+    %p #{image_tag 'loading.gif', width: 15} Сообщение отправляется...
+  #success
+    %p Сообщение отправлено, спасибо!
+  #error
+    %p Произошла ошибка, приносим Вам свои извинения
