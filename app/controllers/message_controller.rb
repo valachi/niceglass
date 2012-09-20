@@ -4,7 +4,9 @@ class MessageController < ApplicationController
     message = Message.new(params[:message])
     if message.valid?
       MessageMailer.sendmail(message).deliver
+      head :ok
+    else
+      head :bad_request
     end
-    head :ok
   end
 end

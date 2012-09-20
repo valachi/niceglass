@@ -22,10 +22,11 @@ $ ->
         $('#loading').show()
       complete: ->
         $('#loading').hide()
-        $('#success').show()
-        sendingMail = null
         $('input, textarea').val ''
+        sendingMail = null
       success: ->
+        $('#loading').hide()
+        $('#success').show()
       error: ->
         $('#loading').hide()
         $('#error').show()
