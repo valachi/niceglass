@@ -1,7 +1,7 @@
 #coding: utf-8
 class MessageMailer < ActionMailer::Base
   default to: 'info@niceglass.ru',
-          from: 'niceglass2@gmail.com',
+          from: 'niceglass2@gmail.com'
 
   def sendmail(message)
     @message = message
