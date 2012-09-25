@@ -31,3 +31,8 @@ $ ->
         $('#loading').hide()
         $('#error').show()
     false
+
+  $('.tn3gallery').tn3
+    # autoplay:true
+    width:951
+    height:480
