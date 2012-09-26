@@ -5,6 +5,8 @@ gem 'haml'
 gem 'compass-rails'
 gem 'pg'
 gem 'jquery-rails'
+gem 'mysql2'
+gem 'carrierwave'
 
 group :development do
   gem 'sqlite3'
