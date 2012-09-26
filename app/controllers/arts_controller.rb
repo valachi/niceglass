@@ -36,7 +36,7 @@ class ArtsController < ApplicationController
 
     respond_to do |format|
       if @art.save
-        format.html { redirect_to @art, notice: 'Работа была добавлена в галерею' }
+        format.html { redirect_to arts_path, notice: 'Работа была добавлена в галерею' }
         format.json { render json: @art, status: :created, location: @art }
       else
         format.html { render action: "new" }
@@ -52,7 +52,7 @@ class ArtsController < ApplicationController
 
     respond_to do |format|
       if @art.update_attributes(params[:art])
-        format.html { redirect_to @art, notice: 'Работа была отредактирована' }
+        format.html { redirect_to arts_path, notice: 'Работа была отредактирована' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
