@@ -11,7 +11,6 @@
     </div>
   <% end %>
 
-  <%= image_tag(@art.image.thumb.url) if @art.image  %>
   <div class="field">
     <%= f.label 'Работа' %><br />
     <%= f.file_field :image %>
