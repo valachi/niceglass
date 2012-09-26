@@ -7,6 +7,7 @@ gem 'pg'
 gem 'jquery-rails'
 gem 'mysql2'
 gem 'carrierwave'
+gem 'mini_magick'
 
 group :development do
   gem 'sqlite3'

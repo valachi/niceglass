@@ -1,0 +1,25 @@
+<h1>Галерея</h1>
+
+<table>
+  <tr>
+    <th>Работа</th>
+    <th>Заголовок</th>
+    <th>Описание</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @arts.each do |art| %>
+  <tr>
+    <td><%= image_tag art.image.thumb.url %></td>
+    <td><%= art.title %></td>
+    <td><%= art.desc %></td>
+    <td><%= link_to 'Редактировать', edit_art_path(art) %></td>
+    <td><%= link_to 'Удалить работу', art, method: :delete, data: { confirm: 'Точно удалить?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Добавить работу в галерею', new_art_path, class: 'new_art' %>
