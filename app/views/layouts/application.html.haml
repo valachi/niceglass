@@ -15,10 +15,11 @@
         = link_to 'СТУДИЯ ВИТРАЖА', root_path
       %nav#main
         %ul
-          %li=link_to 'о нас', root_path
-          %li=link_to 'галерея', gallery_path
-          %li=link_to 'услуги', services_path
-          %li=link_to 'контакты', contacts_path
+          %li= link_to 'о нас', root_path
+          %li= link_to 'галерея', gallery_path
+          %li= link_to 'услуги', services_path
+          %li= link_to 'контакты', contacts_path
+          %li= render 'shared/yandex_share'
       %section#content-box
         =yield
       %footer
