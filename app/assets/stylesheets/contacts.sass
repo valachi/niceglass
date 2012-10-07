@@ -3,7 +3,7 @@
 #contacts
   float: left
   ul
-    margin: 15px
+    margin: 250px 15px 15px 15px
     li
       margin: 15px
       color: white
@@ -13,7 +13,7 @@
 
 #message
   float: left
-  padding-left: 75px
+  padding: 20px 0 0 150px
 
 #new_message
   fieldset
@@ -30,6 +30,8 @@
     font-weight: bold
     border: 1px solid pink
     font-size: 13px
+    +box-shadow(0px 0px 14px rgba(0, 0, 0, .5))
+
 
   input.error_input, textarea.error_input
     border: 1px solid red
@@ -45,6 +47,7 @@
     color: #AB9C80
     font-weight: bold
     text-transform: uppercase
+
 
 #loading, #success, #error
   display: none
