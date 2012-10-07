@@ -8,7 +8,6 @@ gem 'jquery-rails'
 gem 'mysql2'
 gem 'carrierwave'
 gem 'mini_magick'
-gem 'capistrano'
 
 group :development do
   gem 'sqlite3'
