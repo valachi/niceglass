@@ -48,9 +48,11 @@ body
     width: 981px
     height: 510px
     background: #AB9C80
-    box-sizing:border-box
+    -o-box-sizing: border-box
+    -ms-box-sizing: border-box
     -moz-box-sizing: border-box
     -webkit-box-sizing: border-box
+    box-sizing:border-box
     border: 15px solid white
     +single-box-shadow(rgba(30, 30, 30, .6), 0, 0, 10px)
 
@@ -64,6 +66,8 @@ body
 
         img
           border: 1px solid white
+          +box-shadow
+
       .text
         display: block
         width: 411px
