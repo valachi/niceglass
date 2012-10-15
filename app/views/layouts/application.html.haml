@@ -7,7 +7,7 @@
     =javascript_include_tag "//vk.com/js/api/openapi.js?56"
     =render "shared/facebook"
     =csrf_meta_tags
-    :javascript
+    %script{type: 'text/javascript'}
       VK.init({apiId: 3170479, onlyWidgets: true});
   %body
     -if flash[:notice]
@@ -26,8 +26,8 @@
           / %li= render 'shared/yandex_share'
           %li
             #vk_like
-              %script{type: 'text/javascript'}
-                VK.Widgets.Like("vk_like", {type: "mini"}, );
+            %script{type: 'text/javascript'}
+              VK.Widgets.Like("vk_like", {type: "mini"});
             .fb-like{"data-href"=>"http://niceglass.ru", "layout"=>"button_count", "data-send"=>"false", "data-width"=>"90", "data-show-faces"=>"false"}
       %section#content-box
         =yield
