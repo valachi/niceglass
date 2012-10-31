@@ -1,9 +1,20 @@
 - @arts = Art.all
-.tn3gallery
-  - @arts.each do |art|
-    %ul
-      %li
-        %h4= art.title
-        .tn3.description= art.desc
-        %a{ href: art.image.url }
-          = image_tag art.image.thumb.url
+.grid-slyder-gallery
+  .g-slider
+    .tiles
+      %ul{title: 'Category 1'}
+        - @arts.each do |art|
+          %li
+            = image_tag art.image.url
+            %div
+              = art.title
+            .content
+              = art.desc
+      %ul{title: 'Category 2'}
+        - @arts.each do |art|
+          %li
+            = image_tag art.image.url
+            %div
+              = art.title
+            .content
+              = art.desc

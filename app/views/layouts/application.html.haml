@@ -7,6 +7,18 @@
     =javascript_include_tag "//vk.com/js/api/openapi.js?56"
     =render "shared/facebook"
     =csrf_meta_tags
+    :javascript
+      $(document).ready(
+        function() {
+          $(".grid-slyder-gallery").gridSlider({
+            tile_height: 202,
+            tile_width: 226,
+            num_rows:2,
+            auto_scale: true,
+            auto_center: true
+          });
+        }
+      )
     %script{type: 'text/javascript'}
       VK.init({apiId: 3170479, onlyWidgets: true});
   %body

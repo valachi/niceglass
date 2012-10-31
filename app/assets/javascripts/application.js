@@ -12,5 +12,5 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require jquery.tn3lite.min
+//= require jquery.grid-slider
 //= require_tree .
