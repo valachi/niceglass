@@ -2,19 +2,23 @@
 .grid-slyder-gallery
   .g-slider
     .tiles
-      %ul{title: 'Category 1'}
+      %ul{title: 'Эта категория'}
         - @arts.each do |art|
           %li
-            = image_tag art.image.url
+            = image_tag art.image.url(:thumb)
             %div
               = art.title
             .content
-              = art.desc
-      %ul{title: 'Category 2'}
+              = image_tag art.image.url(:thumb), class: 'im-desc', align: 'left'
+              %h1= art.title
+              %p= art.desc
+      %ul{title: 'Та категория'}
         - @arts.each do |art|
           %li
-            = image_tag art.image.url
+            = image_tag art.image.url(:thumb)
             %div
               = art.title
             .content
-              = art.desc
+              = image_tag art.image.url(:thumb), class: 'im-desc', align: 'left'
+              %h1= art.title
+              %p= art.desc
