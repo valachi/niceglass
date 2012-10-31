@@ -149,7 +149,7 @@ position:relative;
 float:right;
 width:20px;
 height:100%;
-background-image:url(assets/buttons.png);
+background-image:url(buttons.png);
 background-position:5px center;
 background-repeat:no-repeat;
 cursor:pointer;
@@ -180,7 +180,7 @@ width:20px;
 height:100%;
 top:0;
 z-index:10;
-background:url(assets/spacer.png) no-repeat;
+background:url(spacer.png) no-repeat;
 }
 .g-slider .index-back{
 left:0;
@@ -208,7 +208,7 @@ width:8px;
 height:8px;
 padding:0;
 margin:8px 6px;
-background:url(assets/buttons.png) -83px 0 no-repeat;
+background:url(buttons.png) -83px 0 no-repeat;
 cursor:pointer;
 font-size:0;
 }
@@ -371,7 +371,7 @@ position:relative;
 float:left;
 width:12px;
 height:100%;
-background-image:url(assets/buttons.png);
+background-image:url(buttons.png);
 background-repeat:no-repeat;
 cursor:pointer;
 }
@@ -435,7 +435,7 @@ position:relative;
 float:right;
 width:18px;
 height:26px;
-background-image:url(assets/buttons.png);
+background-image:url(buttons.png);
 background-repeat:no-repeat;
 background-position:-46px center;
 margin:0 4px;
@@ -457,7 +457,7 @@ height:100%;
 overflow:hidden;
 }
 .g-slider .outer-content.loading{
-background:url(assets/loader.gif) center no-repeat;
+background:url(loader.gif) center no-repeat;
 }
 .g-slider .inner-content{
 position:absolute;
