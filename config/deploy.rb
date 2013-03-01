@@ -1,8 +1,8 @@
 require 'bundler/capistrano'
 load 'deploy/assets'
 
-server '5.9.59.102', :app, :web, :db, primary: true
-set :deploy_to, '~'
+server '109.234.154.252', :app, :web, :db, primary: true
+set :deploy_to, '/var/rails/niceglass'
 set :user, 'niceglass'
 set :use_sudo, false
 ssh_options[:forward_agent] = true
