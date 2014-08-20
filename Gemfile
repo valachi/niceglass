@@ -7,6 +7,8 @@ gem 'jquery-rails'
 gem 'mysql2'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'execjs'
+gem 'therubyracer'
 
 group :development do
   gem 'sqlite3'
